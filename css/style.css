@@ -1,0 +1,162 @@
+﻿body {
+}
+
+.carousel-item img {
+    margin: 0 auto;
+}
+
+.carousel {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 3%;
+    font-size: 42px;
+    margin-top: 60px; 
+}
+
+/*
+.card {
+    //display: inline-block;
+    //background-image: url("img/bck.jpg");
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.card-left {
+    padding: 3%;
+    width: 30%;
+    margin: auto;
+}
+
+.card-right {
+    
+    margin: auto;
+    width:45%;
+
+}
+
+
+.cardPoster {
+    border-radius: 24px;
+}
+
+.labelCard {
+    //padding-top: 30px;
+    font-size: 36px;
+}
+    */
+
+.card {
+    display: flex;
+    padding: 20px;
+    margin: 2%;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.card-right {
+    color: white;
+    width: 50%;
+    //vertical-align: middle;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.card-left {
+    width: 50%;
+    
+}
+
+form {
+    margin-left: 40%;
+    color: black;
+    font-size: 24px;
+}
+
+.photoCard {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.labelCard{
+    font-size: 36px;
+    //margin-top: 180px;
+}
+
+.btn{
+    margin: auto;
+    //width: 80%; 
+    padding: 6%; 
+    font-size: 24px;
+}
+
+.demo{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+
+.bio {
+    padding: 3%;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin: 2%;
+}
+
+.btn_collapse {
+    margin: 0;
+    font-size: 24px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fffa6b;
+    padding: 24px;
+}
+
+a{
+    color: black; 
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 3% 6%;
+    
+}
+
+.nav-link {
+    font-size: 24px;
+    display: inline;
+    margin: 0 6%;
+}
+
+nav tr:nth-child(1){
+    margin-inline-start: 0;
+}
+
+ul {
+    padding: 10px;
+    background-color: wheat;
+    position: fixed;
+    font-size: 24px;
+}
+
+.leftMenu {
+    background-color: #fffa6b;
+    color: black;
+    font-size: 18px;
+   
+}
+
+.navLeft {
+    //text-transform: uppercase;
+    height: 100%;
+}

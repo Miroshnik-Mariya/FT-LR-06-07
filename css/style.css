@@ -1,4 +1,5 @@
-﻿body {
+﻿:root {
+    --gutter: 20px;
 }
 
 .carousel-item img {
@@ -17,39 +18,6 @@ h1 {
     font-size: 42px;
     margin-top: 60px; 
 }
-
-/*
-.card {
-    //display: inline-block;
-    //background-image: url("img/bck.jpg");
-    background-color: black;
-    border-radius: 20px;
-    color: white;
-}
-
-.card-left {
-    padding: 3%;
-    width: 30%;
-    margin: auto;
-}
-
-.card-right {
-    
-    margin: auto;
-    width:45%;
-
-}
-
-
-.cardPoster {
-    border-radius: 24px;
-}
-
-.labelCard {
-    //padding-top: 30px;
-    font-size: 36px;
-}
-    */
 
 .card {
     display: flex;
@@ -142,13 +110,6 @@ nav tr:nth-child(1){
     margin-inline-start: 0;
 }
 
-ul {
-    padding: 10px;
-    background-color: wheat;
-    position: fixed;
-    font-size: 24px;
-}
-
 .leftMenu {
     background-color: #fffa6b;
     color: black;
@@ -160,3 +121,134 @@ ul {
     //text-transform: uppercase;
     height: 100%;
 }
+
+.row {
+    display: flex;
+    //flex-wrap: wrap;
+}
+.actorFoto img {
+    width: 100%; /* Делаем изображение адаптивным */
+    height: auto; /* Обеспечиваем сохранение пропорций */
+}
+
+.actor{
+    padding: 3%;
+    font-size: 24px;
+
+}
+
+.actCon-1{
+    padding-bottom: 30px;
+    font-size: 42px;
+}
+
+.actorContainer {
+    margin: 3%;
+}
+
+.cards {
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    padding: 3%;
+    margin: 3%;
+    font-size: 160px;
+    padding-bottom: 6%;
+}
+
+.catalog {
+    background-color: #fffa6b;
+    margin: 3%;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.phCard {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.labCard{
+    margin-bottom: 6%;
+    height: 18%;
+}
+
+.lab{
+    font-size: 16%;
+}
+
+@media screen and (max-width:768px) {
+    .row {
+        flex-direction: column; /* Изменяем расположение на вертикальное */
+    }
+
+    .actor {
+        order: 1; /* Блок информации будет первым */
+        width: 100%;
+    }
+
+    .actorFoto {
+        order: 2; /* Фотография будет второй */
+        margin-top: 20px; /* Добавляем отступ сверху для разделения элементов */
+        width: 100%;
+    }
+
+    .cards{
+        width: 100%;
+
+    }
+
+    .imgNone {
+        display: none;
+    }
+}
+
+
+
+table {
+    width: 90%;
+    border: 1px solid grey;
+    margin: auto;
+    //padding: 10px;
+    margin-bottom: 3%;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid #111111;
+    text-align: center;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+    padding: 6px;
+    font-size: 18px;
+}
+
+caption {
+    font-size: 24px;
+    margin: 12px;
+    color: black;
+    font-size: 36px;
+}
+
+th, td {
+    padding: 7px, 10px, 10px, 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fffa6b;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(1) {
+    background-color: black;
+    color: white;
+} 
